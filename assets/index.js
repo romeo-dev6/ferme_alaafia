@@ -91,9 +91,55 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLight()});
 
 /* ── Form ── */
 function sendForm(){
+  const form = document.querySelector('.contact-form-wrap');
+  const emailInput = form.querySelector('input[type="email"]');
+  const nameInput = form.querySelector('input[type="text"]');
+  const phoneInput = form.querySelector('input[type="tel"]');
+  const dateInput = form.querySelector('input[type="date"]');
+  const messageInput = form.querySelector('textarea');
+  
+  // Validation de l'email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailInput.value || !emailRegex.test(emailInput.value)) {
+    alert('Veuillez entrer une adresse email valide.');
+    emailInput.focus();
+    return;
+  }
+  
+  // Validation du nom
+  if (!nameInput.value || nameInput.value.trim().length < 2) {
+    alert('Veuillez entrer votre nom complet.');
+    nameInput.focus();
+    return;
+  }
+  
+  // Validation du téléphone
+  if (!phoneInput.value || phoneInput.value.trim().length < 8) {
+    alert('Veuillez entrer un numéro de téléphone valide.');
+    phoneInput.focus();
+    return;
+  }
+  
+  // Validation de la date
+  if (!dateInput.value) {
+    alert('Veuillez sélectionner une date souhaitée.');
+    dateInput.focus();
+    return;
+  }
+  
+  // Validation du message
+  if (!messageInput.value || messageInput.value.trim().length < 10) {
+    alert('Veuillez entrer un message d\'au moins 10 caractères.');
+    messageInput.focus();
+    return;
+  }
+  
   const t=document.getElementById('toast');
   t.classList.add('show');
   setTimeout(()=>t.classList.remove('show'),4000);
+  
+  // Réinitialiser le formulaire après succès
+  form.reset();
 }
 
 /* ── Active nav on scroll ── */
@@ -106,3 +152,14 @@ window.addEventListener('scroll',()=>{
     a.style.color=href==='#'+cur?(navEl.classList.contains('scrolled')?'var(--leaf)':'white'):'';
   });
 },{passive:true});
+
+/* ── Back to top button ── */
+const backToTop=document.getElementById('backToTop');
+if(backToTop){
+  window.addEventListener('scroll',()=>{
+    backToTop.classList.toggle('visible',window.scrollY>300);
+  },{passive:true});
+  backToTop.addEventListener('click',()=>{
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+}
