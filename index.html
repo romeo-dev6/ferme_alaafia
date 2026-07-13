@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ferme Alaafia : une expérience unique de tourisme agricole, culture africaine, gastronomie authentique et nature. Découvrez activités, randonnées, fêtes culturelles et cuisine biologique.">
+<meta name="keywords" content="ferme écotourisme, agriculture biologique, culture africaine, agrotourisme, randonnées, gastronomie africaine, fêtes culturelles, élevage, pisciculture">
+<meta name="author" content="Ferme Alaafia">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="language" content="French">
+
+<!-- Open Graph pour réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ferme-alaafia.com/">
+<meta property="og:title" content="Ferme Alaafia — Terre de Paix & d'Accueil">
+<meta property="og:description" content="Découvrez la Ferme Alaafia : agrotourisme, culture africaine, cuisine bio et randonnées en pleine nature.">
+<meta property="og:image" content="assets/img/webp/og-image.webp">
+<meta property="og:image:alt" content="Vue aérienne de la Ferme Alaafia">
+<meta property="og:locale" content="fr_FR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://ferme-alaafia.com/">
+<meta name="twitter:title" content="Ferme Alaafia — Terre de Paix & d'Accueil">
+<meta name="twitter:description" content="Découvrez la Ferme Alaafia : agrotourisme, culture africaine, cuisine bio et randonnées en pleine nature.">
+<meta name="twitter:image" content="assets/img/webp/og-image.webp">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://ferme-alaafia.com/">
+
+<!-- Favicon (local) -->
+<link rel="icon" type="image/webp" href="assets/img/webp/logo.webp">
+<link rel="apple-touch-icon" href="assets/img/webp/logo.webp">
+
+<!-- Preload critical resources -->
+<!-- Fonts are loaded locally from assets/fonts/ to avoid external requests -->
+<link rel="stylesheet" href="assets/style.css">
+
+<!-- Security & privacy meta -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests;">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta name="permissions-policy" content="geolocation=(), microphone=(), camera=()">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Ferme Alaafia",
+  "description": "Ferme écotouristique proposant agrotourisme, culture africaine, cuisine biologique et activités en nature",
+  "url": "https://ferme-alaafia.com",
+  "image": "assets/img/webp/og-image.webp",
+  "telephone": "+XX XXX XXX XXX",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Localité",
+    "addressRegion": "Région",
+    "postalCode": "Code postal",
+    "addressCountry": "Pays"
+  },
+  "sameAs": [
+    "https://www.facebook.com/ferme-alaafia",
+    "https://www.instagram.com/ferme-alaafia"
+  ],
+  "areaServed": {
+    "@type": "GeoShape",
+    "name": "Région couverte par la ferme"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Fondateurs"
+  },
+  "foundingDate": "2008",
+  "amenities": [
+    "Activités agricoles",
+    "Randonnées guidées",
+    "Restaurant",
+    "Hébergement",
+    "Fêtes culturelles",
+    "Ateliers"
+  ]
+}
+</script>
+
+<!-- Additional Schema: Offer -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AggregateOffer",
+  "name": "Visites et activités - Ferme Alaafia",
+  "description": "Packages de visites, activités agricoles et fêtes culturelles",
+  "url": "https://ferme-alaafia.com",
+  "priceCurrency": "XOF",
+  "offerCount": 6,
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Visite de la ferme",
+      "description": "Découvrez la vie agricole et l'élevage",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Randonnée guidée",
+      "description": "Randonnée 6km dans la galeries",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Cours de danse traditionnelle",
+      "description": "Initiation aux danses et musiques africaines",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Restaurant et dégustation",
+      "description": "Cuisine africaine biologique",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+
+<!-- LOADER -->
+<!-- <div class="loader" id="loader">
+  <div class="loader-logo">Ferme <span>Alaafia</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div> -->
+
+<!-- CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#accueil">
+      <div class="nav-logo-mark">
+        <img src="assets/img/webp/logo.webp" alt="Logo Ferme Alaafia" width="40" height="40">
+      </div>
+      <div class="nav-logo-text">Ferme Alaafia<small>Terre de Paix</small></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#a-propos">La Ferme</a></li>
+      <li><a href="#activites">Activités</a></li>
+      <li><a href="#randonnees">Randonnées</a></li>
+      <li><a href="#culture">Culture</a></li>
+      <li><a href="#restaurant">Restaurant</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#contact" class="nav-cta-btn">Réserver</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <a href="#a-propos">La Ferme</a>
+  <a href="#activites">Activités</a>
+  <a href="#randonnees">Randonnées</a>
+  <a href="#culture">Culture & Fêtes</a>
+  <a href="#restaurant">Restaurant</a>
+  <a href="#galerie">Galerie</a>
+  <a href="#tarifs">Tarifs</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="accueil">
+    <div class="hero-canvas">
+    <img id="heroImg"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Vue aérienne de la Ferme Alaafia" class="img-ph">
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">Bienvenue à la Ferme Alaafia</div>
+    <h1 class="hero-title">La nature,<br>la culture &<br><em>l'art de vivre</em></h1>
+    <p class="hero-sub">À quelques kilomètres de la ville, découvrez un havre de paix où agriculture, élevage, gastronomie africaine et traditions se rencontrent dans une harmonie rare.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-sun">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+        Réserver ma visite
+      </a>
+      <a href="#activites" class="btn-ghost">Découvrir les activités</a>
+    </div>
+  </div>
+  <div class="hero-badges">
+    <div class="hero-badge-pill">
+      <div class="hero-badge-pill-icon" style="background:var(--leaf-pale)">🌿</div>
+      <div><strong>Agriculture Bio</strong><span>Produits 100% naturels</span></div>
+    </div>
+    <div class="hero-badge-pill">
+      <div class="hero-badge-pill-icon" style="background:#fff8e1">🥁</div>
+      <div><strong>Fêtes Culturelles</strong><span>Toute l'année</span></div>
+    </div>
+    <div class="hero-badge-pill">
+      <div class="hero-badge-pill-icon" style="background:#fce4ec">🍖</div>
+      <div><strong>Cuisine Africaine</strong><span>Menus authentiques</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    Défiler
+  </div>
+</section>
+
+<!-- ═══ À PROPOS ═══ -->
+<section id="a-propos">
+  <div class="inner">
+    <div class="about-grid">
+      <div class="about-img-stack reveal-left">
+        <div class="about-img-main">
+          <img id="aboutMain"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Champs verdoyants de la ferme" class="img-ph">
+        </div>
+        <div class="about-img-secondary">
+          <img id="aboutSec"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Animaux d'élevage" class="img-ph">
+        </div>
+        <div class="about-stamp"><strong>2008</strong><small>fondée</small></div>
+      </div>
+      <div class="about-text reveal-right">
+        <span class="section-eyebrow">Notre histoire</span>
+        <h2 class="section-title">Une ferme, une âme, une famille</h2>
+        <p class="section-lead">Alaafia — mot yoruba qui signifie <strong>« paix »</strong> — c'est l'esprit qui guide chaque jour notre ferme depuis 2008. Ici, la terre est cultivée avec respect, les animaux sont élevés avec soin, et chaque visiteur repart avec un morceau d'Afrique dans le cœur.</p>
+        <p class="section-lead" style="margin-top:1rem">Nous croyons que la reconnexion à la nature et aux traditions est une ressource précieuse dans le monde d'aujourd'hui.</p>
+        <div class="about-pills" style="margin-top:1.5rem">
+          <span class="about-pill"><span>🌾</span> Céréales & Maraîchage</span>
+          <span class="about-pill"><span>🐄</span> Élevage bovin</span>
+          <span class="about-pill"><span>🐓</span> Aviculture</span>
+          <span class="about-pill"><span>🐟</span> Pisciculture</span>
+          <span class="about-pill"><span>🌳</span> Arboriculture</span>
+          <span class="about-pill"><span>🍯</span> Apiculture</span>
+        </div>
+        <div class="about-values">
+          <div class="about-value">
+            <div class="about-value-icon">🤝</div>
+            <h4>Accueil chaleureux</h4>
+            <p>Un personnel passionné, toujours prêt à partager son savoir-faire.</p>
+          </div>
+          <div class="about-value">
+            <div class="about-value-icon">🌱</div>
+            <h4>Agriculture durable</h4>
+            <p>Méthodes respectueuses de l'environnement et des saisons.</p>
+          </div>
+          <div class="about-value">
+            <div class="about-value-icon">🎭</div>
+            <h4>Tradition vivante</h4>
+            <p>Musique, danses et coutumes célébrées tout au long de l'année.</p>
+          </div>
+          <div class="about-value">
+            <div class="about-value-icon">🏡</div>
+            <h4>Lieu de ressourcement</h4>
+            <p>Un espace de calme et de nature, loin de l'agitation urbaine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ACTIVITÉS ═══ -->
+<section id="activites">
+  <div class="inner">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Ce qui vous attend</span>
+      <h2 class="section-title">Des expériences uniques pour tous</h2>
+      <p class="section-lead">Que vous veniez seul, en famille ou en groupe, la Ferme Alaafia vous réserve des moments inoubliables.</p>
+    </div>
+    <div class="activites-grid">
+      <div class="activite-card reveal">
+        <div class="activite-card-img"><img id="act1"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Agriculture" class="img-ph"></div>
+        <div class="activite-card-body">
+          <span class="activite-tag">Découverte</span>
+          <div class="activite-card-icon">🌾</div>
+          <h3>Vie agricole & Élevage</h3>
+          <p>Participez aux semis, récoltez avec les paysans, nourrissez les animaux. Une immersion totale dans la vie rurale africaine.</p>
+        </div>
+      </div>
+      <div class="activite-card reveal">
+        <div class="activite-card-img"><img id="act2"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Randonnée" class="img-ph"></div>
+        <div class="activite-card-body">
+          <span class="activite-tag">Plein air</span>
+          <div class="activite-card-icon">🥾</div>
+          <h3>Randonnées & Nature</h3>
+          <p>Explorez les sentiers balisés, découvrez la faune locale et les paysages sauvages qui entourent la ferme.</p>
+        </div>
+      </div>
+      <div class="activite-card reveal">
+        <div class="activite-card-img"><img id="act3"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Culture" class="img-ph"></div>
+        <div class="activite-card-body">
+          <span class="activite-tag">Culture</span>
+          <div class="activite-card-icon">🥁</div>
+          <h3>Danses & Musiques</h3>
+          <p>Initiez-vous aux rythmes traditionnels, assistez aux spectacles et laissez-vous emporter par la joie des fêtes culturelles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RANDONNÉES ═══ -->
+<section id="randonnees">
+  <div class="inner">
+    <div class="rando-layout">
+      <div class="rando-left reveal-left">
+        <span class="section-eyebrow">En pleine nature</span>
+        <h2 class="section-title" style="color:white">Randonnées &amp; Aventures annuelles</h2>
+        <p class="section-lead" style="color:rgba(255,255,255,.7)">Chaque année, la Ferme Alaafia organise des randonnées guidées à travers ses terres et les environs. Accessibles à tous, elles mêlent découverte, effort et convivialité.</p>
+        <div class="rando-cards">
+          <div class="rando-card">
+            <div class="rando-card-num">01</div>
+            <div>
+              <h4>Randonnée des Savanes</h4>
+              <p>6 km à travers les champs et forêts galeries, avec observation des oiseaux et faune sauvage locale.</p>
+            </div>
+          </div>
+          <div class="rando-card">
+            <div class="rando-card-num">02</div>
+            <div>
+              <h4>Tour de la Ferme</h4>
+              <p>Parcours de 3 km autour des installations : potager, verger, étangs et parcs à bétail.</p>
+            </div>
+          </div>
+          <div class="rando-card">
+            <div class="rando-card-num">03</div>
+            <div>
+              <h4>Nuit des Étoiles</h4>
+              <p>Randonnée nocturne suivie d'un bivouac sous les étoiles et d'une soirée au coin du feu.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-sun" style="display:inline-flex;margin-top:2rem;gap:8px">
+          <!-- <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg> -->
+          S'inscrire à une randonnée
+        </a>
+      </div>
+      <div class="rando-img-mosaic reveal-right">
+        <div class="rando-img"><img id="rando1"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Paysage savane" class="img-ph"></div>
+        <div class="rando-img"><img id="rando2"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Groupe en randonnée" class="img-ph"></div>
+        <div class="rando-img"><img id="rando3"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Forêt galerie" class="img-ph"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CULTURE ═══ -->
+<section id="culture">
+  <div class="inner">
+    <div class="culture-header-grid">
+      <div class="reveal-left">
+        <span class="section-eyebrow">Traditions vivantes</span>
+        <h2 class="section-title">Danses, jeux &amp; célébrations africaines</h2>
+        <p class="section-lead">La Ferme Alaafia est bien plus qu'un espace agricole. C'est un lieu où les cultures africaines s'expriment librement, où les tambours parlent et où les corps racontent des siècles d'histoire.</p>
+        <a href="#contact" class="btn-sun" style="display:inline-flex;margin-top:1.75rem;gap:8px">Voir le calendrier des fêtes</a>
+      </div>
+      <div class="culture-imgs reveal-right">
+        <div class="culture-img-wrap"><img id="cult1"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Danse traditionnelle" class="img-ph"></div>
+        <div class="culture-img-wrap"><img id="cult2"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Percussions africaines" class="img-ph"></div>
+      </div>
+    </div>
+    <div class="fetes-grid reveal">
+      <div class="fete-card">
+        <div class="fete-card-color" style="background:var(--sun)"></div>
+        <div class="fete-card-body">
+          <h4>Fête des Récoltes</h4>
+          <p>Grande célébration annuelle marquant la fin des moissons, avec danses du terroir, repas communautaire et offrandes traditionnelles.</p>
+          <div class="fete-card-date">🗓 Novembre</div>
+        </div>
+      </div>
+      <div class="fete-card">
+        <div class="fete-card-color" style="background:var(--leaf)"></div>
+        <div class="fete-card-body">
+          <h4>Festival des Rythmes</h4>
+          <p>Trois jours de musique live, de percussions traditionnelles et d'ateliers de danse ouverts à tous les visiteurs.</p>
+          <div class="fete-card-date">🗓 Avril</div>
+        </div>
+      </div>
+      <div class="fete-card">
+        <div class="fete-card-color" style="background:var(--earth)"></div>
+        <div class="fete-card-body">
+          <h4>Jeux Ancestraux</h4>
+          <p>Compétitions de jeux traditionnels africains — adji, corde, course de pirogue — animées par des maîtres de jeux.</p>
+          <div class="fete-card-date">🗓 Juillet</div>
+        </div>
+      </div>
+      <div class="fete-card">
+        <div class="fete-card-color" style="background:#c0392b"></div>
+        <div class="fete-card-body">
+          <h4>Nuit du Conte</h4>
+          <p>Soirée de contes et légendes africaines racontés au feu de camp par les anciens de la communauté.</p>
+          <div class="fete-card-date">🗓 Décembre</div>
+        </div>
+      </div>
+      <div class="fete-card">
+        <div class="fete-card-color" style="background:var(--leaf-light)"></div>
+        <div class="fete-card-body">
+          <h4>Foire de la Terre</h4>
+          <p>Marché de produits agricoles locaux, artisanat, plantes médicinales et démonstrations de savoir-faire paysans.</p>
+          <div class="fete-card-date">🗓 Août</div>
+        </div>
+      </div>
+      <div class="fete-card">
+        <div class="fete-card-color" style="background:var(--sun-light)"></div>
+        <div class="fete-card-body">
+          <h4>Semaine de l'Enfant</h4>
+          <p>Activités spéciales pour les enfants : initiation à la poterie, balades à dos d'âne, ateliers cuisine et plantations.</p>
+          <div class="fete-card-date">🗓 Juin</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RESTAURANT ═══ -->
+<section id="restaurant">
+  <div class="inner">
+    <div class="resto-intro">
+      <div class="section-header" style="margin-bottom:0">
+        <span class="section-eyebrow">Saveurs africaines</span>
+        <h2 class="section-title">Le Restaurant Alaafia</h2>
+        <p class="section-lead">Notre chef et son équipe vous proposent une cuisine authentiquement africaine, préparée avec les produits frais de la ferme. Chaque assiette est une invitation au voyage sensoriel.</p>
+        <div style="margin-top:1.75rem;display:flex;gap:.75rem;flex-wrap:wrap">
+          <span class="about-pill"><span>🌿</span> Produits de la ferme</span>
+          <span class="about-pill"><span>🔥</span> Cuisson au feu de bois</span>
+          <span class="about-pill"><span>👨‍🍳</span> Chef local</span>
+          <span class="about-pill"><span>🥂</span> Boissons artisanales</span>
+        </div>
+        <a href="#contact" class="btn-sun" style="display:inline-flex;margin-top:2rem;gap:8px">Réserver une table</a>
+      </div>
+      <div class="resto-img-frame reveal-right">
+        <div class="resto-img-frame-main">
+          <img id="restoMain"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Terrasse du restaurant" class="img-ph">
+        </div>
+        <div class="resto-label">Cuisine du terroir africain</div>
+      </div>
+    </div>
+
+    <h3 class="section-title reveal" style="margin-top:4rem;margin-bottom:2rem;font-size:1.6rem">Quelques spécialités</h3>
+    <div class="menus-grid">
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img id="food1"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Sauce arachide" class="img-ph"><div class="menu-card-img-overlay"></div></div>
+        <div class="menu-card-body"><div class="menu-card-origin">Afrique de l'Ouest</div><h4>Sauce Arachide au Poulet Fermier</h4><p>Poulet élevé sur place, sauce d'arachides grillées, légumes frais et piment selon votre goût.</p></div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img id="food2"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Brochettes" class="img-ph"><div class="menu-card-img-overlay"></div></div>
+        <div class="menu-card-body"><div class="menu-card-origin">Grill Africain</div><h4>Brochettes de Bœuf aux Herbes</h4><p>Bœuf de notre élevage mariné dans les épices locales, grillé au feu de bois et servi avec attiéké.</p></div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img id="food3"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Fufu" class="img-ph"><div class="menu-card-img-overlay"></div></div>
+        <div class="menu-card-body"><div class="menu-card-origin">Tradition</div><h4>Fufu & Soupe Légumes</h4><p>Fufu de manioc pilé à la main, accompagné d'une soupe riche en légumes-feuilles et poisson fumé.</p></div>
+      </div>
+      <div class="menu-card reveal">
+        <div class="menu-card-img"><img id="food4"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Bissap" class="img-ph"><div class="menu-card-img-overlay"></div></div>
+        <div class="menu-card-body"><div class="menu-card-origin">Boissons</div><h4>Bissap, Gnamakoudji & Sodabi</h4><p>Boissons artisanales préparées sur place : fleur d'hibiscus, gingembre frais et eau-de-vie de palme.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALERIE ═══ -->
+<section id="galerie">
+  <div class="inner">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">En images</span>
+      <h2 class="section-title">La vie à la Ferme Alaafia</h2>
+      <p class="section-lead">Des clichés qui capturent l'âme de notre ferme — la beauté brute de la nature, la chaleur humaine et la richesse culturelle.</p>
+    </div>
+    <div class="gallery-masonry reveal">
+      <div class="gallery-item" data-light="gi1"><img id="gi1"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"><div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>
+      <div class="gallery-item" data-light="gi2"><img id="gi2"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"><div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>
+      <div class="gallery-item" data-light="gi3"><img id="gi3"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"><div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>
+      <div class="gallery-item" data-light="gi4"><img id="gi4"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"><div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>
+      <div class="gallery-item" data-light="gi5"><img id="gi5"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"><div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>
+      <div class="gallery-item" data-light="gi6"><img id="gi6"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"><div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>
+      <div class="gallery-item" data-light="gi7"><img id="gi7"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"><div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>
+      <div class="gallery-item" data-light="gi8"><img id="gi8"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"><div class="gallery-overlay"><svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TARIFS ═══ -->
+<section id="tarifs">
+  <div class="inner">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Nos formules</span>
+      <h2 class="section-title">Choisissez votre expérience</h2>
+      <p class="section-lead" style="color:rgba(255,255,255,.65)">Que vous veniez pour une demi-journée ou un séjour complet, nous avons la formule qui vous correspond.</p>
+    </div>
+    <div class="tarifs-grid">
+      <div class="tarif-card reveal">
+        <div class="tarif-card-tag">Découverte</div>
+        <div class="tarif-price">5 000<small style="font-size:1rem"> FCFA</small></div>
+        <div class="tarif-period">par personne · visite guidée 2h</div>
+        <h3 class="tarif-name">Balade Découverte</h3>
+        <ul class="tarif-feats">
+          <li>Visite guidée de la ferme</li>
+          <li>Nourrissage des animaux</li>
+          <li>Dégustation de produits frais</li>
+          <li>Photo souvenir</li>
+        </ul>
+        <a href="#contact" class="tarif-btn">Réserver</a>
+      </div>
+      <div class="tarif-card popular reveal">
+        <div class="tarif-card-tag">⭐ Le plus choisi</div>
+        <div class="tarif-price">15 000<small style="font-size:1rem"> FCFA</small></div>
+        <div class="tarif-period">par personne · journée complète</div>
+        <h3 class="tarif-name">Journée Alaafia</h3>
+        <ul class="tarif-feats">
+          <li>Visite complète de la ferme</li>
+          <li>Randonnée guidée (3h)</li>
+          <li>Déjeuner au restaurant</li>
+          <li>Atelier cuisine africaine</li>
+          <li>Spectacle de danses</li>
+          <li>Boissons artisanales incluses</li>
+        </ul>
+        <a href="#contact" class="tarif-btn">Réserver</a>
+      </div>
+      <div class="tarif-card reveal">
+        <div class="tarif-card-tag">Groupe</div>
+        <div class="tarif-price">Sur<small style="font-size:1rem"> devis</small></div>
+        <div class="tarif-period">groupes · entreprises · scolaires</div>
+        <h3 class="tarif-name">Séjour & Événements</h3>
+        <ul class="tarif-feats">
+          <li>Programme sur mesure</li>
+          <li>Hébergement en bungalows</li>
+          <li>Séminaires & team-building</li>
+          <li>Fêtes & célébrations privées</li>
+          <li>Encadrement personnalisé</li>
+        </ul>
+        <a href="#contact" class="tarif-btn">Nous contacter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TÉMOIGNAGES ═══ -->
+<section id="temoignages">
+  <div class="inner">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Ce qu'ils en disent</span>
+      <h2 class="section-title">Avis de nos visiteurs</h2>
+    </div>
+    <div class="temoignages-grid">
+      <div class="temo-card reveal">
+        <div class="temo-stars">★★★★★</div>
+        <p class="temo-text">« Une journée extraordinaire ! On a nourri les animaux, mangé une sauce arachide incroyable, et le soir les danseurs nous ont complètement envoûtés. Je reviens chaque année. »</p>
+        <div class="temo-author">
+          <div class="temo-avatar"><img id="temo1"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"></div>
+          <div class="temo-author-info"><strong>Akossiwa M.</strong><span>Visitrice — Lomé</span></div>
+        </div>
+      </div>
+      <div class="temo-card reveal">
+        <div class="temo-stars">★★★★★</div>
+        <p class="temo-text">« Nous avons emmené notre classe de CM2 en sortie pédagogique. Les enfants ont adoré — les animaux, la randonnée, les jeux traditionnels. Une expérience éducative et fun à la fois ! »</p>
+        <div class="temo-author">
+          <div class="temo-avatar"><img id="temo2"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"></div>
+          <div class="temo-author-info"><strong>M. Komlan K.</strong><span>Enseignant — Kpalimé</span></div>
+        </div>
+      </div>
+      <div class="temo-card reveal">
+        <div class="temo-stars">★★★★★</div>
+        <p class="temo-text">« On a organisé notre séminaire d'entreprise ici. Le cadre, la nourriture, la qualité de l'accueil... C'est un endroit qui ressource vraiment. Notre équipe en parle encore des mois après. »</p>
+        <div class="temo-author">
+          <div class="temo-avatar"><img id="temo3"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="" class="img-ph"></div>
+          <div class="temo-author-info"><strong>Danielle T.</strong><span>DRH — Lomé</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="inner">
+    <div class="contact-layout">
+      <div class="reveal-left">
+        <span class="section-eyebrow">Nous rejoindre</span>
+        <h3 class="section-title">Planifiez votre venue</h3>
+        <p style="font-size:14.5px;color:var(--text-mid);line-height:1.75;margin-bottom:2rem">Nous sommes ouverts toute l'année et nous adaptons aux groupes comme aux familles. Notre équipe répond à toutes vos questions avec le sourire.</p>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-text"><strong>Localisation</strong><span>À 25 km de Lomé, route nationale vers Kpalimé — Togo</span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div class="contact-detail-text"><strong>Téléphone</strong><span>+228 90 37 11 21</span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div class="contact-detail-text"><strong>Email</strong><span>contact@fermealaafia.tg</span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕐</div>
+            <div class="contact-detail-text"><strong>Horaires</strong><span>Lun – Dim : 8h00 – 19h00 (sur réservation)</span></div>
+          </div>
+        </div>
+        <div class="contact-img">
+          <img id="contactImg"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Entrée de la ferme" class="img-ph">
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal-right">
+        <h3>Réservez ou renseignez-vous</h3>
+        <div class="frow">
+          <div class="fgroup"><label>Prénom & Nom</label><input type="text" placeholder="Kofi Mensah"></div>
+          <div class="fgroup"><label>Email</label><input type="email" placeholder="vous@email.com"></div>
+        </div>
+        <div class="fgroup"><label>Téléphone</label><input type="tel" placeholder="+228 90 00 00 00"></div>
+        <div class="frow">
+          <div class="fgroup">
+            <label>Type de visite</label>
+            <select>
+              <option>Sélectionner…</option>
+              <option>Balade Découverte</option>
+              <option>Journée Alaafia</option>
+              <option>Groupe / Scolaire</option>
+              <option>Séminaire / Entreprise</option>
+              <option>Événement privé</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label>Nombre de personnes</label>
+            <select>
+              <option>1 – 5</option>
+              <option>6 – 15</option>
+              <option>16 – 30</option>
+              <option>31 – 50</option>
+              <option>50+</option>
+            </select>
+          </div>
+        </div>
+        <div class="fgroup"><label>Date souhaitée</label><input type="date"></div>
+        <div class="fgroup"><label>Message</label><textarea placeholder="Parlez-nous de votre projet de visite, vos besoins particuliers…"></textarea></div>
+        <button class="submit-btn" id="contactSubmit" type="button">Envoyer ma demande</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-text">Ferme <span>Alaafia</span></div>
+        <p class="footer-brand-desc">Un espace où la terre nourrit les corps, les traditions nourrissent les âmes, et l'accueil africain fait toujours son effet. Venez vivre la paix — Alaafia.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="footer-social" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" class="footer-social" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+          <a href="#" class="footer-social" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="rgba(61,43,31,.5)"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>La Ferme</h4>
+        <ul>
+          <li><a href="#a-propos">Notre histoire</a></li>
+          <li><a href="#activites">Activités</a></li>
+          <li><a href="#randonnees">Randonnées</a></li>
+          <li><a href="#culture">Culture & Fêtes</a></li>
+          <li><a href="#restaurant">Restaurant</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visite</h4>
+        <ul>
+          <li><a href="#tarifs">Tarifs & Formules</a></li>
+          <li><a href="#galerie">Galerie photo</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="#contact">Réservations</a></li>
+          <li><a href="#contact">Groupes & Scolaires</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Infos pratiques</h4>
+        <ul>
+          <li><a href="#contact">Comment nous trouver</a></li>
+          <li><a href="#contact">Horaires d'ouverture</a></li>
+          <li><a href="#">Règlement intérieur</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Ferme Alaafia — Togo · Tous droits réservés</p>
+      <p>Conçu avec ❤ pour <a href="#">Alaafia</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close">✕</button>
+  <img id="lbImg"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">✅ Votre demande a bien été envoyée ! Nous vous répondons sous 24h.</div>
+
+<script src="assets/index.js" defer></script>
+
+<!-- Google Analytics or Matomo would go here -->
+
+</body>
+</html>

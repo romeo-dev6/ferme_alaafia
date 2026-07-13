@@ -1,0 +1,11 @@
+{
+  "name": "ferme-alaafia-assets",
+  "version": "1.0.0",
+  "description": "Conversion and renaming tools for Ferme Alaafia images",
+  "scripts": {
+    "convert": "node convert-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.0"
+  }
+}

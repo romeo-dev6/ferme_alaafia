@@ -1,0 +1,202 @@
+[
+  {
+    "input": "a.jpg",
+    "output": "a.webp"
+  },
+  {
+    "input": "about.jpg",
+    "output": "about.webp"
+  },
+  {
+    "input": "ban.jpg",
+    "output": "ban.webp"
+  },
+  {
+    "input": "banner.jpg",
+    "output": "banner.webp"
+  },
+  {
+    "input": "formation.jpg",
+    "output": "formation.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0145.jpg",
+    "output": "img-20260624-wa0145.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0146.jpg",
+    "output": "img-20260624-wa0146.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0147.jpg",
+    "output": "img-20260624-wa0147.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0148.jpg",
+    "output": "img-20260624-wa0148.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0149.jpg",
+    "output": "img-20260624-wa0149.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0150.jpg",
+    "output": "img-20260624-wa0150.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0151.jpg",
+    "output": "img-20260624-wa0151.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0152.jpg",
+    "output": "img-20260624-wa0152.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0153.jpg",
+    "output": "img-20260624-wa0153.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0154.jpg",
+    "output": "img-20260624-wa0154.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0155.jpg",
+    "output": "img-20260624-wa0155.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0156.jpg",
+    "output": "img-20260624-wa0156.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0157.jpg",
+    "output": "img-20260624-wa0157.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0158.jpg",
+    "output": "img-20260624-wa0158.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0159.jpg",
+    "output": "img-20260624-wa0159.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0160.jpg",
+    "output": "img-20260624-wa0160.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0161.jpg",
+    "output": "img-20260624-wa0161.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0162.jpg",
+    "output": "img-20260624-wa0162.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0163.jpg",
+    "output": "img-20260624-wa0163.webp"
+  },
+  {
+    "input": "IMG-20260624-WA0164.jpg",
+    "output": "img-20260624-wa0164.webp"
+  },
+  {
+    "input": "logo.png",
+    "output": "logo.webp"
+  },
+  {
+    "input": "medium-shot-kid-working-cornfield.jpg",
+    "output": "medium-shot-kid-working-cornfield.webp"
+  },
+  {
+    "input": "production.jpg",
+    "output": "production.webp"
+  },
+  {
+    "input": "randonnee.jpg",
+    "output": "randonnee.webp"
+  },
+  {
+    "input": "resto.jpg",
+    "output": "resto.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.16.33_7c5b75aa.jpg",
+    "output": "whatsapp-image-2025-01-28--18.16.33_7c5b75aa.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.16.33_b6cccb35.jpg",
+    "output": "whatsapp-image-2025-01-28--18.16.33_b6cccb35.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.16.33_dfcf25d8.jpg",
+    "output": "whatsapp-image-2025-01-28--18.16.33_dfcf25d8.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.16.33_ea6396c3.jpg",
+    "output": "whatsapp-image-2025-01-28--18.16.33_ea6396c3.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.16.34_02f15b67.jpg",
+    "output": "whatsapp-image-2025-01-28--18.16.34_02f15b67.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.16.34_39dc13a4.jpg",
+    "output": "whatsapp-image-2025-01-28--18.16.34_39dc13a4.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.16.34_4b57b260.jpg",
+    "output": "whatsapp-image-2025-01-28--18.16.34_4b57b260.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.16.34_ba3df20e.jpg",
+    "output": "whatsapp-image-2025-01-28--18.16.34_ba3df20e.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.16.35_82c350b6.jpg",
+    "output": "whatsapp-image-2025-01-28--18.16.35_82c350b6.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.29.07_ad912f6a.jpg",
+    "output": "whatsapp-image-2025-01-28--18.29.07_ad912f6a.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.29.08_3b36dacb.jpg",
+    "output": "whatsapp-image-2025-01-28--18.29.08_3b36dacb.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.29.08_6b52763b.jpg",
+    "output": "whatsapp-image-2025-01-28--18.29.08_6b52763b.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.29.08_9f060554.jpg",
+    "output": "whatsapp-image-2025-01-28--18.29.08_9f060554.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.29.09_51fa1748.jpg",
+    "output": "whatsapp-image-2025-01-28--18.29.09_51fa1748.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.29.09_686514b7.jpg",
+    "output": "whatsapp-image-2025-01-28--18.29.09_686514b7.webp"
+  },
+  {
+    "input": "WhatsApp Image 2025-01-28 à 18.29.10_e9b48d46.jpg",
+    "output": "whatsapp-image-2025-01-28--18.29.10_e9b48d46.webp"
+  },
+  {
+    "input": "WhatsApp Image 2026-07-06 at 16.06.07.jpeg",
+    "output": "whatsapp-image-2026-07-06-at-16.06.07.webp"
+  },
+  {
+    "input": "WhatsApp Image 2026-07-06 at 16.06.08.jpeg",
+    "output": "whatsapp-image-2026-07-06-at-16.06.08.webp"
+  },
+  {
+    "input": "WhatsApp Image 2026-07-06 at 16.06.09.jpeg",
+    "output": "whatsapp-image-2026-07-06-at-16.06.09.webp"
+  },
+  {
+    "input": "WhatsApp Image 2026-07-06 at 16.12.01.jpeg",
+    "output": "whatsapp-image-2026-07-06-at-16.12.01.webp"
+  }
+]

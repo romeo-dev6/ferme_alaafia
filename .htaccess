@@ -1,0 +1,120 @@
+# ═══════════════════════════════════════════════════════════
+# FERME ALAAFIA - Apache Configuration (.htaccess)
+# Optimisations SEO, Performance & Sécurité
+# ═══════════════════════════════════════════════════════════
+
+# 1. ENABLE MOD_REWRITE
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Rediriger non-www vers www (ou vice-versa)
+    # Décommenter et adapter selon votre configuration
+    # RewriteCond %{HTTP_HOST} ^ferme-alaafia.com [NC]
+    # RewriteRule ^(.*)$ https://www.ferme-alaafia.com/$1 [L,R=301]
+
+    # Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# 2. COMPRESSION GZIP
+<IfModule mod_deflate.c>
+    # Compresser HTML, CSS, JavaScript
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+
+    # Supprimer doublon de compression
+    DeflateFilterNote ratio_in instream_bps_in
+    DeflateFilterNote ratio_out outstream_bps_out
+    DeflateFilterNote ratio_ave avg_ratio
+</IfModule>
+
+# 3. CACHING (Browser Caching)
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Images (1 mois)
+    ExpiresByType image/jpeg "access plus 30 days"
+    ExpiresByType image/gif "access plus 30 days"
+    ExpiresByType image/png "access plus 30 days"
+    ExpiresByType image/webp "access plus 30 days"
+    ExpiresByType image/svg+xml "access plus 30 days"
+
+    # CSS & JS (3 mois)
+    ExpiresByType text/css "access plus 3 months"
+    ExpiresByType application/javascript "access plus 3 months"
+    ExpiresByType text/javascript "access plus 3 months"
+
+    # Fonts (1 an)
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+
+    # HTML (1 jour - pour invalidation rapide)
+    ExpiresByType text/html "access plus 1 day"
+
+    # Default
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# 4. ETAG (Validation de Cache)
+<IfModule mod_headers.c>
+    Header unset ETag
+    FileETag None
+
+    # CORS pour fonts (CDN Fonts)
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|svg)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# 5. SÉCURITÉ HEADERS
+<IfModule mod_headers.c>
+    # Empêcher MIME sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Clickjacking protection
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # XSS Protection
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions Policy (anciennement Feature Policy)
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# 6. CHARSET UTF-8
+AddDefaultCharset UTF-8
+
+# 7. CONTENT-TYPE
+<IfModule mod_mime.c>
+    AddType application/javascript js
+    AddType text/css css
+    AddType image/svg+xml svg
+</IfModule>
+
+# 8. ERROR & 404
+# Rediriger vers page accueil si 404 (optionnel)
+# ErrorDocument 404 /index.html
+
+# 9. DIRECTORY ACCESS
+# Empêcher l'affichage du contenu des dossiers
+Options -Indexes
+
+# Protéger les fichiers sensibles
+<FilesMatch "(^#.*#|\.htaccess|\.htpasswd|wp-config|web\.config)$">
+    Require all denied
+</FilesMatch>
+
+# ═══════════════════════════════════════════════════════════
+# Note: Adapter le domaine "ferme-alaafia.com" à votre vrai domaine
+# ═══════════════════════════════════════════════════════════

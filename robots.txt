@@ -1,0 +1,33 @@
+# Robots.txt pour Ferme Alaafia
+# Pour obtenir plus d'informations : https://www.robotstxt.org/
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /index.html
+
+# Désactiver le crawl des ressources non essentielles
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /cache/
+
+# Signaler le sitemap
+Sitemap: https://ferme-alaafia.com/sitemap.xml
+
+# Délais de crawl recommandés (optionnel)
+Crawl-delay: 1
+
+# Google-Bot spécifique (plus agressif)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bloquer les bots connus comme malveillants
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
