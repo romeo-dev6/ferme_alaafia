@@ -434,18 +434,18 @@ footer{background:var(--soil);color:rgba(255,255,255,.7);padding:80px 5% 36px}
 }
 @media(max-width:600px){
   .hero-title{
-    font-size:2.8rem;
+    font-size:3rem;
     line-height:1.1
     }
   .hero-sub{
-    font-size:16px;
+    font-size:17px;
     line-height:1.6
     }
   .section-title{
-    font-size:1.8rem
+    font-size:2rem
     }
   .section-lead{
-    font-size:15px;
+    font-size:16px;
     line-height:1.7
     }
   .hero-btns{
@@ -454,8 +454,8 @@ footer{background:var(--soil);color:rgba(255,255,255,.7);padding:80px 5% 36px}
     }
   .btn-sun,.btn-ghost{
     justify-content:center;
-    padding:14px 24px;
-    font-size:15px
+    padding:16px 28px;
+    font-size:16px
     }
   .gallery-masonry{
     columns:2
@@ -494,33 +494,33 @@ footer{background:var(--soil);color:rgba(255,255,255,.7);padding:80px 5% 36px}
   
   /* Augmentation des tailles de texte sur mobile */
   .activite-card h3{
-    font-size:1.3rem
+    font-size:1.4rem
     }
   .activite-card p{
-    font-size:14px;
+    font-size:15px;
     line-height:1.6
     }
   .menu-card h4{
-    font-size:1.1rem
+    font-size:1.2rem
     }
   .menu-card p{
-    font-size:13px;
+    font-size:14px;
     line-height:1.5
     }
   .temo-text{
-    font-size:14px;
+    font-size:15px;
     line-height:1.6
     }
   .contact-detail-text span{
-    font-size:14px
+    font-size:15px
     }
   .fgroup label{
-    font-size:14px;
+    font-size:15px;
     margin-bottom:8px
     }
   .fgroup input,.fgroup select,.fgroup textarea{
-    font-size:15px;
-    padding:12px
+    font-size:16px;
+    padding:14px
     }
 }
 
